@@ -3,3 +3,7 @@ https://gist.githubusercontent.com/tgcsantos/3bdb29eba6ce391e90df2b72205ba891/ra
 
 Base de dados original:
 https://www.kaggle.com/datasets/kaggleshashankk/house-price-data-of-sao-paulo
+
+
+Um guia rápido para o Pandas:
+https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf
