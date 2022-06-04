@@ -49,3 +49,10 @@ dados
 dados["Valor_Moeda"].mean()         #tira a média da coluna "Valor_Moeda"
 
 dados["Valor_Moeda"].plot.hist(bins=50)     #mostra um histograma com 50 barras
+
+dados.describe()        #mostra algumas informações sobre o objeto "dados", como quantidade, média, desvio padrão, valor mínimo...
+
+pd.set_option('display.float_format', lambda x: '%.2f' % x)  #configura a visualização do Pandas para eliminar a notação cientifica
+dados.describe(include = 'all')     #mostra insformações sobre todos os elementos do objeto 'dados'
+
+dados[['Rua', 'Bairro', 'Cidade']].describe()
