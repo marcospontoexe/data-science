@@ -56,3 +56,14 @@ pd.set_option('display.float_format', lambda x: '%.2f' % x)  #configura a visual
 dados.describe(include = 'all')     #mostra insformações sobre todos os elementos do objeto 'dados'
 
 dados[['Rua', 'Bairro', 'Cidade']].describe()
+
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+sns.set()       #define os padrões do sns
+plt.figure(figsize=(10, 8))       #configura o tamanho
+ax = sns.histplot(data = dados, x = 'Valor_Moeda')
+ax.set_title("Histograma com o avlor dos imóveis")   #título do gráfico
+plt.xlim((-50, 10000000))       #da zoom no eixo x
+plt.show()      #plota um histograma 'ax' tb ploto o mesmo gráfico
+
