@@ -1,0 +1,6 @@
+Explore sobre as Séries Temporais:
+https://www.alura.com.br/artigos/series-temporais-e-suas-aplicacoes
+
+Para acessar o dicionário de dados que vamos trabalhar do IBGE:
+https://drive.google.com/file/d/1WVTqfKtHOOk5X1AWaSOn6NLaO7cix2m4/view
+
