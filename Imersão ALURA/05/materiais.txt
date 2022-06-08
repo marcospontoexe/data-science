@@ -1,0 +1,12 @@
+Explore a documentação do Sci-kit-learn:
+https://scikit-learn.org/stable/
+
+Quer saber mais sobre correlação? Este material é ótimo:
+https://en.wikipedia.org/wiki/Correlation
+
+
+Que tal desmistificar alguns termos em ML?:
+https://www.alura.com.br/artigos/desmistificando-termos-machine-learning-tipos-aprendizado
+
+Você também pode entender mais sobre a maldição da dimensionalidade:
+https://en.wikipedia.org/wiki/Curse_of_dimensionality
