@@ -43,3 +43,17 @@ mask = np.triu(np.ones_like(dados_vendas_censo.corr(), dtype=bool))     #exclui 
 heatmap = sns.heatmap(dados_vendas_censo.corr(), mask=mask, vmin=-1, vmax=1, annot=True, cmap='BrBG')
 heatmap.set_title('Correlação', fontdict={'fontsize':18}, pad=16);
 
+from sklearn.linear_model import LinearRegression           #regressão linear
+from sklearn.model_selection import train_test_split        #testar a RNA
+
+X = dados_vendas_censo[["Metragem"]]    #dados para treinamento
+Y = dados_vendas_censo["Valor_anuncio"] #dados para usar como resposta para o treino da RNA
+X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.25, random_state= 54)       #retorna 4 conjuntos de  dados, dois para treino e dois para teste
+lr = LinearRegression()
+lr.fit(X_train, Y_train)         #treinando a RNA com dados de entrada(treino) e dados de saida (resposta)    
+Y_predict_test = lr.predict(X_test)            #realiza uma predição
+Y_predict_train = lr.predict(X_train)
+
+from sklearn.metrics import mean_absolute_error, r2_score       # para verificar o treinamento da RNA 
+mean_absolute_error(Y_test, Y_predict_test)                 #retorna a distancia entre os resultados esperados e os retornados (é o erro do treinamento)
+
