@@ -1,0 +1,12 @@
+# Testado com Python 3.14 e as versões entre parênteses
+pandas>=2.2          # (3.0.3)
+numpy>=1.26          # (2.4.4)
+matplotlib>=3.7      # (3.11.0)
+scikit-learn>=1.4    # (1.8.0)
+geopandas>=1.0       # (1.2.0)
+pyogrio>=0.7         # (0.13.0) leitura do shapefile com filtro
+seaborn>=0.13        # (0.13.2) usado só nos scripts das aulas
+
+# Para executar o notebook pela linha de comando
+nbconvert>=7         # (7.17.1)
+ipykernel>=6         # (7.4.0)
